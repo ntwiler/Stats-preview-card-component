@@ -1,0 +1,88 @@
+
+@use '_colors.sass'
+@use '_fonts.sass'
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+body
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  line-height: normal
+  font-family: fonts.$font-inter
+  background-color: colors.$color-very-dark-blue
+  color: colors.$color-white
+
+.container
+  width: 327px
+  height: 780px
+  margin-top: 88px
+  margin-bottom: 88px
+  border-radius: 8px
+  background: #1B1937
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.20)
+
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.image-mobile
+  width: 100%
+  height: 100%
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+
+.image-desktop
+  display: none
+
+.text-container
+  width: 264px
+
+h1
+  text-align: center
+  font-size: 28px
+  font-style: normal
+  font-weight: 700
+  line-height: 32px
+  margin-top: 40px
+
+.text-color
+  color: colors.$color-soft-violet
+
+.text-paragraph
+  text-align: center
+  font-size: 15px
+  font-style: normal
+  font-weight: 400
+  line-height: 25px
+  margin-top: 16px
+  opacity: 0.75
+
+.text-topic
+  text-align: center
+  font-size: 24px
+  font-style: normal
+  font-weight: 700
+  line-height: normal
+  margin-top: 24px
+
+.text-topic.first
+  margin-top: 40px
+
+.text-comment
+  text-align: center
+  font-family: fonts.$font-lexend
+  font-size: 12px
+  font-style: normal
+  font-weight: 400
+  line-height: 25px
+  letter-spacing: 1px
+  text-transform: uppercase
+  opacity: 0.6
+
+.text-comment.last
+  margin-bottom: 32px
